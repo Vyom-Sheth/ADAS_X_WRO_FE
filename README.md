@@ -4,7 +4,7 @@ Team Members:
 
 Vyom Sheth
 
-Virika
+Virika Nanda
 
 
 
