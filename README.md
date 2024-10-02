@@ -60,25 +60,25 @@ The initial plan was to use the Arduino uno board, however, we realized that it 
 Surfing the internet, we came across a better replacement for Arduino Uno, which was the ESP 32 driver board. It had a faster processor and more GPIO pins, along with 520 KB of SRAM (compared to just 2 KB on the Arduino Uno). This would allow it to handle more complex programs and store large data sets for sensor readings or calculations. So we decided to use this for the car.
 
 
-Raspberry pi was the best fit for the camera detection in the obstacle challenge, and the VL53L1X ultrasonic sensor for measuring distances. We planned on using a DC motor and a servo motor to operate the robot.
+Raspberry Pi was the best fit for the camera direction in the obstacle challenge, and the VL53L1X ultrasonic sensor was for measuring distances. We planned on using a DC motor and a servo motor to operate the robot.
 
 
 1st Design (3d printed):
 
 
-The first design of the car was completely made using CAD in ptc creo. The base was designed according to the desired measurements, and made in a minimalistic way as we wanted the design to be simple. The back tires would be attached by a dc motor, and the front tires would be attached using a servo motor using the front tyre mechanism. For this mechanism, we designed 2 connectors that had a T shape, where one end would be connected to the base using a screw, and the other one would be connected to the beam on either side of it. This was an efficient turning mechanism for the front tires. There were 4 slots in the center of the base where we intended to mount raspberry pi and esp 32 board.
-However, once it was 3d printed we realized that it was not very sturdy and wouldn't be able to support the components on it as they weren't able to fit properly. It was also difficult for the sensors to get an appropriate value since they weren’t fixed at a proper height. So we realized we wouldn't be able to use this and decided to make a second design.
+The first design of the car was completely made using CAD in PTC Creo. The base was designed according to the desired measurements, and made in a minimalistic way as we wanted the design to be simple. The back tires would be attached by a DC motor, and the front tires would be attached using a servo motor using the front tire mechanism. For this mechanism, we designed 2 connectors that had a T shape, where one end would be connected to the base using a screw, and the other one would be connected to the beam on either side of it. This was an efficient turning mechanism for the front tires. There were 4 slots in the center of the base where we intended to mount Raspberry Pi and ESP 32 board.
+However, I was 3ESPrinted we realized that it was not very sturdy and wouldn't be able to support the components on it as they weren't able to fit properly. It was also difficult for the sensors to get an appropriate value since they weren’t fixed at a proper height. So we realized we wouldn't be able to use this and decided to make a second design.
 
 
 2nd Design:
 
 
-For the second design, the base of an existing remote control car was used, along with its tires. The existing motor was too powerful for the project, so we replaced it with our ow, and added components such as theArduinoo uno board and sensors. However it was observed that the dimensions of the car were larger than needed, and the motor was still very powerful, which is why it was difficult to control. The torque and speed were higher than required and they couldn't be changed by programming, so the design had to be modified. 
+For the second design, the base of an existing remote control car was used, along with its tires. The existing motor was too powerful for the project, so we replaced it with our own and added components such as theownuinoo uno board and sensors. However, it was observed that the dimensions, of the car were larger than needed, and the motor was still very powerful, which is why it was difficult to control. The torque and speed were higher than required and they couldn't be changed by programming, so the design had to be modified. 
 
 
 Final Design:
 
 
-The final and current design of the car includes a base constructed from lego ev3 parts such as beams, screws, axles and square beams. This is the most compact and reliable design till now, as we can add or subtract parts whenever needed. The sensor height can be changed as and when required which is beneficial for the challenge. A 3d printed plate is placed on top of the base to attach all the components such as boards andbatteriesy using zip ties. 
+The final and current design of the car includes a base constructed from lego ev3 parts such as beams, screws, axles, and square beams. This is the most compact and reliable design till now, as we can add or subtract parts whenever needed. The sensor height can be changed as and when required which is beneficial for the challenge. A 3d printed plate is placed on top of the base to attach all the components such as boards and batteries using zip ties. 
 Front three mechanism: The front trees are controlled using a servo motor to steer them. 
-Back tyre mechanism: A medium motor from the ev3 parts is used to move the back tyres which have a differential gear mechanism. They are connected using the standard ev3 cable which is cut off from one end to connect the individual wires inside it to the esp32 board. Cv cc
+Back tire mechanism: A medium motor from the EV3 parts is used to move the back tEV3s which have a differential gear mechanism. They are connected using the standard EV3 cable which is cut off from one EV3 to connect the individual wires inside it to the esp32 board.
