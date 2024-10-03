@@ -1,25 +1,22 @@
-#include <Servo.h>
-Servo servo;
+#include <Wire.h>
+#include <Adafruit_VL53L1X.h>
 
-#define ENB 6;
+Adafruit_VL53L1X sensor;
 
-const int motorspeed = 150;
-
-void setup() 
-{
-  pinMode(9, OUTPUT);
-  servo.attach(9);
-  pinMode(2, OUTPUT);
-//NEGATIVE OF THE MOTOR
-  pinMode(3, OUTPUT);
-//POSITIVE OF THE MOTOR
-  analogWrite(6, motorspeed);
-  servo.write(100);
-  digitalWrite(2, LOW);
-  digitalWrite(3, HIGH);
+void setup() {
+  Wire.begin();
+  sensor.Init();
+  sensor.setMeasurementTimingBudgetMicroseconds(100000); // Set timeout to 100ms
+  Serial.begin(115200); // Replace with your desired baud rate
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  sensor.ranging();
+  uint16_t distance = sensor.getDistance();
 
+  Serial.print("Distance: ");
+  Serial.print(distance);
+  Serial.println(" mm");
+
+  delay(100); // Adjust delay as needed
 }
