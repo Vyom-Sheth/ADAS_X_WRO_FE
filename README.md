@@ -1,7 +1,7 @@
 Future Engineering Journal - ADAS X
 
 All people using this directory please make sure that not all codes, programs and designs were successful and used. They still have been uploaded to show our progress and journey of testing.
-The codes that are used have a tag "(used)" on them. They will be updated 2 days before the tournament.
+The codes that are used have a tag "_used_" on them. They will be updated 2 days before the tournament.
 
 
 
